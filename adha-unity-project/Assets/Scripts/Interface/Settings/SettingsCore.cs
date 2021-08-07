@@ -16,7 +16,7 @@ public static class Settings {
     public static void Boot () {
 
         byte[] data = IOMFile.ReadAllBytes("settings.dat");
-        settings = data == null ? new Dictionary<string, object>() : 
+        settings = data == null ? new Dictionary<string, object>() :
             (Dictionary<string, object>)USerialization.Deserialize<Dictionary<string, object>>(data);
     }
 

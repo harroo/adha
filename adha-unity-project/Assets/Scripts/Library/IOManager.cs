@@ -17,11 +17,26 @@ namespace IOManager {
 
         public static string homeDir;
 
-        public static string GetBase () => homeDir + "/";
-        public static string GetBase (string s) => homeDir + "/" + s;
+        public static string GetBase () {
+
+            if (!booted) Boot();
+
+            return homeDir + "/";
+        }
+        public static string GetBase (string s)  {
+
+            if (!booted) Boot();
+
+            return homeDir + "/" + s;
+        }
+
+        private static bool booted = false;
 
         [RuntimeInitializeOnLoadMethod]
         public static void Boot () {
+
+            if (booted) return;
+            booted = true;
 
             if (Application.platform == RuntimePlatform.LinuxPlayer || Application.platform == RuntimePlatform.LinuxEditor) {
 
@@ -36,7 +51,8 @@ namespace IOManager {
                 homeDir = ".adha";
             }
 
-            IOMDirectory.EnsureDirectory(homeDir);
+            if (!Directory.Exists(homeDir))
+                Directory.CreateDirectory(homeDir);
         }
     }
 
