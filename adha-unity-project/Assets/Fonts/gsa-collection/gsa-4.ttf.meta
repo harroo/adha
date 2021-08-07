@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99eab374680417b35af078538098fe84
+guid: 60c79ff1cde25d277aab516aa313b4c4
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - GSA-1
+  - GSA-4
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
