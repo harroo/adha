@@ -6,7 +6,7 @@ public class DisplayAnimation : MonoBehaviour {
 
     public EmotionSet idle, sad, happy, flushed, angry, tired, sleep;
 
-    private EmotionSet currentSet;
+    private static EmotionSet currentSet;
 
     private Image display;
 
@@ -14,7 +14,7 @@ public class DisplayAnimation : MonoBehaviour {
 
         display = GetComponent<Image>();
 
-        currentSet = idle;
+        if (currentSet == null) currentSet = idle;
         display.sprite = currentSet.idle;
     }
 
