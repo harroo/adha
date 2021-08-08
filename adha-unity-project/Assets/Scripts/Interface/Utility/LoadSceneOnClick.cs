@@ -6,7 +6,7 @@ public class LoadSceneOnClick : MonoBehaviour {
 
     public string sceneToLoad;
 
-    private void OnClick () {
+    public void OnClick () {
 
         SceneManager.LoadScene(sceneToLoad);
     }

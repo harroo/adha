@@ -20,9 +20,9 @@ public class TextColorManager : MonoBehaviour {
         get {
 
             return new Color(
-                (float)Settings.Get("TEXT_COLOR_R", 209.0f) / 255.0f,
-                (float)Settings.Get("TEXT_COLOR_G", 209.0f) / 255.0f,
-                (float)Settings.Get("TEXT_COLOR_B", 241.0f) / 255.0f
+                (float)Settings.Get("TEXT_COLOR_R", 149.0f) / 255.0f,
+                (float)Settings.Get("TEXT_COLOR_G", 138.0f) / 255.0f,
+                (float)Settings.Get("TEXT_COLOR_B", 173.0f) / 255.0f
             );
         }
 
