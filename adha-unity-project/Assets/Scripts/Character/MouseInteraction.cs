@@ -6,12 +6,12 @@ public class MouseInteraction : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void OnPointerEnter (PointerEventData eventData) {
 
-        FindObjectOfType<DisplayAnimation>().ChangeMood(CharacterMood.flushed, Random.Range(1, 32));
+        FindObjectOfType<DisplayAnimation>().ChangeMood(CharacterMood.flushed, Random.Range(1, 8));
     }
 
     public void OnPointerClick (PointerEventData eventData) {
 
-        FindObjectOfType<DisplayAnimation>().ChangeMood(CharacterMood.angry, Random.Range(1, 32));
+        FindObjectOfType<DisplayAnimation>().ChangeMood(CharacterMood.angry, Random.Range(1, 8));
     }
 
     public float idleTimer, sleepTimer;
