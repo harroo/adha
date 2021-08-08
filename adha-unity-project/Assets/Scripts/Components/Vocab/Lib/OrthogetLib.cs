@@ -69,6 +69,7 @@ public static class Orthoget {
                 string[] values0 = getCache.Split('<');
                 string[] values1 = values0[9].Split('>');
                 string description = values1[0].Split('\"')[3];
+                description = description.Remove(description.Length - 10);
 
                 onComplete(word, description);
 
