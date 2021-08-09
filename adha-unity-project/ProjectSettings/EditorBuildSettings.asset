@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vocab.unity
     guid: e04fc7594465361b288d3258b7557b7c
+  - enabled: 1
+    path: Assets/Scenes/Timer.unity
+    guid: 0b413f19e411bc5dea1fcde56fa4afaf
   m_configObjects: {}

@@ -54,7 +54,7 @@ public class DisplayAnimation : MonoBehaviour {
 
         display.sprite = currentSet.talk;
 
-        resetTimer = 0.1f;
+        resetTimer = Random.Range(0, 2) == 0 ? 0.1f : 0.3f;
     }
 
     public void Blink () {
